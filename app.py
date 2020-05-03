@@ -11,5 +11,6 @@ def index():
 
 @app.route('/about')
 def about():
+    title = "About Steve Hepple"
     names = ["john", "mary", "wes", "sally"]
-    return render_template("about.html", names=names)
+    return render_template("about.html", names=names, title=title)
